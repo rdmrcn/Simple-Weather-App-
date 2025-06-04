@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(0,11,36,0.9780287114845938) 0%, rgba(11,125,78,1) 42%, rgba(0,212,255,1) 100%);
+    font-family: arial;
+    overflow-x: hidden;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.navbar,.navbar__links{
+    display: flex;
+}
+.navbar__links{
+    margin-top: 0;
+}
+.navbar__link{
+    list-style: none;
+    margin-right: 16px;
+}
+
+.navbar__link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    transition: color 0.3s ease-in-out;
+}
+.navbar__link a:hover{
+    color: yellowgreen;
+}
+
+input[type='text']{
+    outline: none;
+    padding: 8px;
+    background-color:#fff;
+}
+form button{
+    padding: 8px;
+    outline: none;
+    background-color: greenyellow;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+form button:hover{
+    background-color: #73b908;
+}
+
+.weather-container{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.weather__temperature,.weather__condition{
+    margin-top: 0;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+.weather__condition{
+    color: #aaff00;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    background-color:black;
+    padding: 20px 0;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.about p{
+    font-size: 1.15em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+#spinner {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+#spinner div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+#spinner div:nth-child(1) {
+    left: 8px;
+    animation: spinner1 0.6s infinite;
+}
+#spinner div:nth-child(2) {
+    left: 8px;
+    animation: spinner2 0.6s infinite;
+}
+#spinner div:nth-child(3) {
+    left: 32px;
+    animation: spinner2 0.6s infinite;
+}
+#spinner div:nth-child(4) {
+    left: 56px;
+    animation: spinner3 0.6s infinite;
+}
+@keyframes spinner1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes spinner3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes spinner2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
