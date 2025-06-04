@@ -11,17 +11,6 @@ A simple web application that allows users to search for the current weather in 
 - Responsive and clean user interface
 - Navigation between Home and About pages
 - Dynamic weather data fetching and display (in progress)
-
-## Screenshots
-
-### Main Interface
-![Weather App UI](image1)
-
-### Project Structure & Code Sample
-![Project Structure](image2)
-
-## Getting Started
-
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 14 or higher recommended)
