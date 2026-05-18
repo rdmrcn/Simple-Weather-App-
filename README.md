@@ -1,4 +1,4 @@
-# Simple-Weather-App-
+## Simple-Weather-App-
 # Weather App
 
 A simple web application that allows users to search for the current weather in any city around the world.
